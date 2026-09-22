@@ -850,20 +850,21 @@
 
 
 
-class BankAccount:
-    def __init__(self, owner, balance):
-        self.owner=owner
-        self.balance = balance
+# class BankAccount:
+#     def __init__(self, owner, balance):
+#         self.owner=owner
+#         self.balance = balance
         
-    def show_balance(self):
-        print(f"Balance {self.owner}: {self.balance}")
+#     def show_balance(self):
+#         print(f"Balance {self.owner}: {self.balance}")
         
         
     
-user1 = BankAccount("Abdulloh", 10)
-user2 = BankAccount("Ehson", 15)
+# user1 = BankAccount("Abdulloh", 10)
+# user2 = BankAccount("Ehson", 15)
 
-user1.show_balance()
-user2.show_balance()
+# user1.show_balance()
+# user2.show_balance()
 
-    
+
+    Abdullo
