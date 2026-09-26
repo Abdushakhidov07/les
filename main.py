@@ -866,5 +866,364 @@
 # user1.show_balance()
 # user2.show_balance()
 
+# class Students:
+#     school=24
+#     def __init__(self, name, age, grade):
+#         self.name = name
+#         self.age = age
+#         self.grade = grade
+        
+#     def show_info(self):
+#         print(f"Student: {self.name}, Age: {self.age}, Grade: {self.grade}, school number: {Students.school}")
+        
+#     @classmethod
+#     def show_scholl_number(cls):
+#         print("School Number", cls.school)  
 
-    Abdullo
+#     @staticmethod
+#     def sum_digit(a, b):
+#         return a + b
+
+#     def __repr__(self):
+#          return f"It is object by name: {self.name}"
+     
+#     def __len__(self):
+#         return len(self.name)
+    
+#     def __eq__(self, other):
+#         return self.name == other.name
+
+    
+# student1 = Students("Mahmud", 16, 10)
+# student2 = Students("Akbar", 16, 10)
+
+# Students.show_scholl_number()
+
+# student1.show_info()
+# print(student1.sum_digit(4, 5))
+
+# print(len(student1))
+# print(student1 == student2)
+
+
+# class Teacher():
+    
+#     def __init__(self, full_name, subject, experience=0):
+        
+#         self.full_name = full_name
+#         self.subject = subject
+#         self.experience = experience
+        
+        
+#     def teach(self):
+#         return f"{self.full_name} is teaching {self.subject}"
+    
+#     def set_experince(self, year):
+#         if year > 0:
+#             self.experience = year
+#         else:
+#             print("experience can't be accepted!")
+#     def get_experince(self):
+#         return f"Experience: {self.experience} years"
+        
+        
+# teacher1 = Teacher("Nasiba Karimova", "Python")
+
+# teacher1.set_experince(6)
+
+# print(teacher1.teach())
+# print(teacher1.get_experince())
+
+
+# class Animal:
+#     def __init__(self,name, color):
+#         self.name=name
+#         self.color=color
+
+
+#     def speak(self):
+#         print(f"{self.name} make sound!")
+        
+#     def run(self):
+#         print(f"{self.name}  runnig!")
+        
+
+
+# class Dog(Animal):
+#     def __init__(self, name, color, breed):
+#         super().__init__(name, color)
+#         self.breed = breed
+#     def speak(self):
+#         print("Dog barks") 
+
+# class Cat(Dog):
+#     def __init__(self, name, color, breed):
+#         super().__init__(name, color, breed)
+
+#     def speak(self):
+#         print("Cat murks") 
+        
+              
+        
+        
+# dog = Dog("Rex", "Pink", "Chihuahua")
+
+# dog.speak()
+# dog.run()
+
+
+# matroskin = Cat("Matroskin", "blue - white", "Homeless")
+
+# matroskin.speak()
+# matroskin.run()
+# print(isinstance(dog, Animal))
+# print(issubclass(Cat, Dog))
+
+
+
+# class Teacher:
+#     def __init__(self, name, expirance):
+#         self.name = name
+#         self.expirance = expirance
+        
+#     def add_expirn(self, exp):
+#         if exp > 0:
+#             self.expirance += exp
+#             print("Your new exp:", self.expirance)
+#         else:
+#             print("EROR")
+            
+#     def info(self):
+#         print(f"Teacher name: {self.name}, experiance: {self.expirance}")
+        
+        
+        
+# teacher = Teacher("Khairiddin", 6)
+
+# teacher.add_expirn(1)
+
+# teacher.info()
+            
+        
+
+
+#!/usr/bin/python3
+
+# from enum import Enum
+ 
+# class Weapon(Enum):
+#     SWORD = 1
+#     BOW = 2
+#     DAGGER = 3
+#     CLUB = 4
+
+# print(Weapon.SWORD.value)
+
+
+
+# ranged_weapon = Weapon.BOW
+# print(ranged_weapon)
+
+# if ranged_weapon == Weapon.BOW:
+#     print("It's a bow")
+
+# print(list(Weapon))
+
+
+
+
+# from abc import ABC, abstractmethod
+
+# class Animal(ABC):
+#     @abstractmethod
+#     def sound(self):
+#         pass
+    
+# class Dog(Animal):
+#     def __init__(self, name, age):
+#         self.name = name
+#         self.age = age
+        
+#     def sound(self):
+#         print(f"Dog {self.name} make sound gaf gaf")
+    
+#     def walk(self):
+#         print(f"Dog {self.name} walking")    
+
+
+
+# dog1 = Dog("Sharik", 5)
+
+
+# dog1.walk()
+# dog1.sound()
+
+
+
+
+
+# class BankAcount:
+#     def __init__(self, username, pinkod, balance):
+#         self.username = username
+#         self.__pinkod = pinkod 
+#         self._balance = balance
+        
+#     def show_info(self):
+#         print(f"Name: {self.username}, PINKOD: {self.__pinkod}, Balamce {self._balance}")
+        
+        
+
+# user1 = BankAcount("Akbar", 1234, 10000)
+
+
+# print(user1.username)
+# print(user1._BankAcount__pinkod)
+# print(user1._balance)
+# user1.show_info()
+
+
+# class Animal:
+#     def __init__(self, name):
+#         self.name = name
+#     def make_sound(self):
+#         print(f"{self.name}:  makes sound")
+        
+# class Dog(Animal):
+#     def make_sound(self):
+#         print(f"{self.name}: Woof!")
+
+# class Cat(Animal):
+#     def make_sound(self):
+#         print(f"{self.name}: Meow!")
+        
+# class Bird(Animal):
+#     def make_sound(self):
+#         print(f"{self.name}: Tweet")
+        
+# dog1 = Dog("Rex") 
+# cat1 = Cat("Momo")
+# bird1 = Bird("Kesha")
+
+# lict = [dog1, cat1, bird1]
+
+# for i in lict:
+#     i.make_sound()
+
+# from cmath import *
+# class Shape:
+#     def area(self):
+#         pass
+    
+# class Circle(Shape):
+    
+#     def area(self, r):
+#         print("circle:", pi * (r**2))
+        
+# class Rectangele(Shape):
+    
+#     def area(self, w, h):
+#         print("Rectangle:", w * h)
+    
+# class Square(Shape):
+    
+#     def area(self, s):
+#         print("Square:", s**2)
+        
+# c = Circle()
+# r = Rectangele()
+# s = Square()
+
+# c.area(5)
+# r.area(4, 5)
+# s.area(3)
+
+# is_login = True 
+
+# def check_login(func):
+#     def inner(*args, **kwargs):
+#         if is_login == True:
+#            res = func(*args, **kwargs)
+#            return res.title()
+#         else:
+#             return "Please login!"
+#     return inner 
+
+
+# @check_login
+# def hello(name) -> str:
+#     return f"Hello {name}"
+
+
+# print(hello("akbar"))
+
+
+
+# generator = lambda start, end: [i for i in range(start, end+1) if i%2 == 0]
+
+
+# lict = []
+# for i in range(10, 20):
+    
+#     lict.append[i]
+
+
+
+# print(generator(1, 10000))
+
+
+
+
+
+# def welcome(func):
+#     def inner(*args,**kwargs):
+#         print("Welcome!")
+#         return func(*args,**kwargs)
+#     return inner
+
+# @welcome
+# def show_name(name)->str:
+#     return name
+    
+# print(show_name("Salohiddin"))
+
+
+# def repeat_three_times(repeat):
+#     def iner1(func):
+#         def iner(*args, **kwargs):
+#             for i in range(repeat):
+#                 func(*args, **kwargs)
+#         return iner
+#     return iner1
+
+# @repeat_three_times(10)
+# def hello():
+#     print("Hello")
+    
+
+# hello()
+
+
+    
+
+
+# lcit = [1 ,2, 3,4,5,6]
+
+
+
+# filter = lambda list: []
+
+# filter(lcitx)
+
+# def direction():
+#     print("hello")
+
+# print(direction.__name__)
+
+
+
+from random import choice
+
+lict = ["Mukimov", "Mansur"]
+
+print(choice(lict))
+
